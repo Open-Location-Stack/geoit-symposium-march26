@@ -1,8 +1,8 @@
-# Open RTLS GEOIT Presentation
+# Open RTLS at GeoIT Symposium
 
-Reveal.js deck for an indoor-mapping-centric Open RTLS presentation.
+Short Reveal.js presentation for the GeoIT Symposium on 16 March 2026.
 
-The content and visual language are based on [open-rtls.com](https://open-rtls.com) and its FAQ as of March 13, 2026, with the narrative tuned for a GEOIT audience.
+The deck presents an indoor-mapping-first Open RTLS narrative and is built as a static site with [Reveal.js](https://revealjs.com/).
 
 ## Local preview
 
@@ -12,37 +12,15 @@ bunx serve .
 
 Then open [http://localhost:3000](http://localhost:3000).
 
-You can also open `index.html` directly in a browser.
-
-## Files
-
-- `index.html`: Reveal.js entrypoint
-- `slides.md`: presentation content
-- `open-rtls.css`: custom theme
-- `assets/`: Open RTLS branding and simple diagrams
-- `wrangler.jsonc`: Cloudflare Pages config
-
-## Deployment
-
-Local Cloudflare credentials are expected in a project-local `.cloudflare` file copied from your machine and excluded from git.
-
-Preview locally with Wrangler:
+Optional Cloudflare-style preview:
 
 ```bash
 npx wrangler pages dev .
 ```
 
-Deploy directly:
+## Project files
 
-```bash
-./publish.sh
-```
-
-Or:
-
-```bash
-set -a
-source ./.cloudflare
-set +a
-npx wrangler pages deploy . --project-name=open-rtls-geoit --branch=main
-```
+- `index.html`: Reveal.js entrypoint
+- `slides.md`: slide content
+- `open-rtls.css`: presentation styling
+- `assets/`: logos and SVG visuals
