@@ -227,9 +227,9 @@ Indoor mapping is the <span class="hl">substrate</span> the rest of the RTLS sta
 
 <!-- .slide: class="image-demo-slide" -->
 ---
-## One of our Bitmaps
+## One of our Bitmap based Maps
 
-<img src="assets/event-navigation.webp" alt="Bitmap-based indoor event navigation map" class="slide-visual image-demo-visual" />
+<img src="assets/event-navigation.webp" alt="Bitmap-based indoor event navigation map" class="slide-visual image-demo-visual" data-reset-on-show="true" />
 
 ---
 ## What is IMDF?
