@@ -56,15 +56,38 @@
       footer.textContent = `Slide ${idx} of ${total}`;
     }
 
+    function relayoutSoon() {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          Reveal.layout();
+        });
+      });
+    }
+
+    function watchSlideImages(slide) {
+      slide.querySelectorAll('img').forEach(img => {
+        if (!img.complete) {
+          img.addEventListener('load', relayoutSoon, { once: true });
+          img.addEventListener('error', relayoutSoon, { once: true });
+        }
+      });
+    }
+
     Reveal.on('ready', event => {
       syncChrome(event.currentSlide);
       updateSlideCount();
+      watchSlideImages(event.currentSlide);
+      relayoutSoon();
     });
 
     Reveal.on('slidechanged', event => {
       syncChrome(event.currentSlide);
       updateSlideCount();
+      watchSlideImages(event.currentSlide);
+      relayoutSoon();
     });
+
+    window.addEventListener('load', relayoutSoon, { once: true });
   </script>
 
 </body>
