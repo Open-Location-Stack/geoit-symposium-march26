@@ -223,16 +223,15 @@ IMDF stands for <strong><span class="hl">Indoor Mapping Data Format</span></stro
     <div class="info-card imdf-point">
       <div class="eyebrow">Proof</div>
       <h3>Already used in products</h3>
-      <p>Platforms such as Microsoft Places already expect IMDF-style indoor map workflows.</p>
+      <p>Apple Maps introduced IMDF, OGC standardized it, and Microsoft Places now expects it.</p>
     </div>
   </div>
-  <figure class="imdf-visual-frame">
+  <div class="imdf-visual-frame">
     <img src="assets/zones.webp" alt="FORMATION map with indoor zones marked on the map" class="slide-visual imdf-visual" />
-    <figcaption>Indoor geometry becomes operational when zones, assets, exits, and work areas all reference the same map model.</figcaption>
-  </figure>
+  </div>
 </div>
 
-> IMDF is not just a schema to store maps; it is a practical interchange format that real platforms already expect.
+> IMDF creates a semantic hierarchy of venues, levels, units, and other features that includes a navigable graph.
 
 ---
 ## Standards alignment
