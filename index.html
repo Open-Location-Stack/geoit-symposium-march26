@@ -122,6 +122,13 @@
           img.addEventListener('error', relayoutSoon, { once: true });
         }
       });
+
+      slide.querySelectorAll('video').forEach(video => {
+        if (video.readyState < 1) {
+          video.addEventListener('loadedmetadata', relayoutSoon, { once: true });
+          video.addEventListener('error', relayoutSoon, { once: true });
+        }
+      });
     }
 
     function resetSlideGifs(slide) {
@@ -140,6 +147,14 @@
         const separator = originalSrc.includes('?') ? '&' : '?';
         const resetSrc = `${originalSrc}${separator}restart=${Date.now()}`;
         img.setAttribute('src', resetSrc);
+      });
+
+      slide.querySelectorAll('video[data-reset-on-show="true"]').forEach(video => {
+        video.currentTime = 0;
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+          playPromise.catch(() => { });
+        }
       });
     }
 

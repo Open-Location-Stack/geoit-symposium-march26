@@ -268,7 +268,9 @@ IMDF stands for <strong><span class="hl">Indoor Mapping Data Format</span></stro
 ---
 ## Adding a venue
 
-<img src="assets/imdf-editor-overview-add-venue.gif" alt="IMDF editor workflow adding a venue to an indoor map" class="slide-visual image-demo-visual" data-reset-on-show="true" />
+<video class="slide-visual image-demo-visual" autoplay muted loop playsinline data-reset-on-show="true" aria-label="IMDF editor workflow adding a venue to an indoor map">
+  <source src="assets/imdf-editor-overview-add-venue.mp4" type="video/mp4" />
+</video>
 
 ---
 ## Editor status today
