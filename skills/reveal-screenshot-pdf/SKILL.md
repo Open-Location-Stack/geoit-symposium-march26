@@ -1,11 +1,11 @@
 ---
 name: reveal-screenshot-pdf
-description: Export a Reveal.js deck to PDF by capturing each slide as a viewport screenshot and stitching those screenshots into a one-page-per-slide PDF. Use when Reveal print mode breaks layouts, when the deck should match the on-screen presentation exactly, or when Codex needs to generate a PDF from a locally served Reveal deck without relying on Reveal's print CSS.
+description: Export this Reveal.js deck to PDF. Use whenever the user asks to export as PDF, save a PDF, or generate a PDF version of the presentation. Default to writing the PDF to ~/Downloads/open-rtls-geoit.pdf by capturing each slide as a viewport screenshot and stitching those screenshots into a one-page-per-slide PDF.
 ---
 
 # Reveal Screenshot PDF
 
-Use this skill when Reveal's built-in PDF export is not good enough and the goal is a PDF that matches the live deck viewport.
+Use this skill whenever the user asks for a PDF export of this deck.
 
 Prefer the bundled script. It captures each slide in a headless browser and writes a PDF where each image becomes one page.
 
@@ -18,12 +18,11 @@ lsof -ti tcp:3000 | xargs kill -9
 bunx serve . --listen 3000
 ```
 
-2. In another shell, run the exporter:
+2. In another shell, run the exporter. Do not choose another destination unless the user explicitly asks for one:
 
 ```bash
 node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
-  http://localhost:3000 \
-  ~/Downloads/open-rtls-geoit-screenshot-export.pdf
+  http://localhost:3000
 ```
 
 3. Stop the local server after export completes.
@@ -35,6 +34,7 @@ node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
 - One PDF page per screenshot
 - Backgrounds included
 - Transitions disabled during capture
+- Output path: `~/Downloads/open-rtls-geoit.pdf`
 
 ## Notes
 
@@ -48,11 +48,18 @@ node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
 ```bash
 node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
   <deck-url> \
-  <output.pdf> \
   --width 1600 \
   --height 900 \
   --wait-ms 250 \
   --chrome-path /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+```
+
+Optional override:
+
+```bash
+node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
+  <deck-url> \
+  <output.pdf>
 ```
 
 Increase `--wait-ms` if images or animations need a little longer to settle before capture.

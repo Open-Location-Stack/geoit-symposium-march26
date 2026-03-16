@@ -7,26 +7,32 @@ const { createRequire } = require('module');
 
 function usage() {
   console.error(
-    'Usage: export_reveal_screenshot_pdf.js <deck-url> <output.pdf> [--width N] [--height N] [--wait-ms N] [--chrome-path PATH]'
+    'Usage: export_reveal_screenshot_pdf.js <deck-url> [output.pdf] [--width N] [--height N] [--wait-ms N] [--chrome-path PATH]'
   );
 }
 
 function parseArgs(argv) {
-  if (argv.length < 4) {
+  if (argv.length < 3) {
     usage();
     process.exit(1);
   }
 
   const options = {
     deckUrl: argv[2],
-    outputPdf: argv[3],
+    outputPdf: path.join(os.homedir(), 'Downloads', 'open-rtls-geoit.pdf'),
     width: 1600,
     height: 900,
     waitMs: 250,
     chromePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
   };
 
-  for (let i = 4; i < argv.length; i += 1) {
+  let i = 3;
+  if (argv[i] && !argv[i].startsWith('--')) {
+    options.outputPdf = argv[i];
+    i += 1;
+  }
+
+  for (; i < argv.length; i += 1) {
     const arg = argv[i];
     const next = argv[i + 1];
 
