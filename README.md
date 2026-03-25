@@ -22,5 +22,5 @@ npx wrangler pages dev .
 
 - `index.html`: Reveal.js entrypoint
 - `slides.md`: slide content
-- `open-rtls.css`: presentation styling
+- `open-location-stack.css`: presentation styling
 - `assets/`: logos and SVG visuals

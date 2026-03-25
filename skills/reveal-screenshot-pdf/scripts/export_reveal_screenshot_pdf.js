@@ -19,7 +19,7 @@ function parseArgs(argv) {
 
   const options = {
     deckUrl: argv[2],
-    outputPdf: path.join(os.homedir(), 'Downloads', 'open-rtls-geoit.pdf'),
+    outputPdf: path.join(os.homedir(), 'Downloads', 'open-location-stack-geoit.pdf'),
     width: 1600,
     height: 900,
     waitMs: 250,

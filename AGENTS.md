@@ -17,7 +17,7 @@ This is a standalone Reveal.js presentation project for the Open RTLS GEOIT talk
 
 - `index.html`: Reveal.js entrypoint and runtime behavior
 - `slides.md`: slide content and structure
-- `open-rtls.css`: presentation theme and layout styling
+- `open-location-stack.css`: presentation theme and layout styling
 - `assets/`: logos and SVG visuals used by the deck
 - `wrangler.jsonc`: Cloudflare Pages configuration
 - `publish.sh`: direct deployment helper
@@ -27,7 +27,7 @@ This is a standalone Reveal.js presentation project for the Open RTLS GEOIT talk
 
 - Preserve the indoor-mapping-first narrative unless the user asks to reposition the talk.
 - Keep the visual style aligned with `open-rtls.com`: light background, restrained typography, subtle borders, minimal accent use.
-- Prefer editing `slides.md`, `open-rtls.css`, and SVG assets over introducing extra tooling or build steps.
+- Prefer editing `slides.md`, `open-location-stack.css`, and SVG assets over introducing extra tooling or build steps.
 - Convert all new bitmap assets (`.png`, `.jpg`, `.jpeg`) to `.webp` before keeping them in the repo, and update references so raw bitmap source files do not get committed.
 - Keep the project static. Do not add frameworks, bundlers, or package manifests unless explicitly requested.
 - Do not run tests, browser-fit checks, or other validation scripts during normal editing unless the user explicitly asks, or immediately before committing.
@@ -58,7 +58,7 @@ Useful quick checks:
 ```bash
 curl -I http://localhost:3000
 curl -I http://localhost:3000/slides.md
-curl -I http://localhost:3000/assets/open-rtls-logo.svg
+curl -I http://localhost:3000/assets/open-location-stack-logo.svg
 ```
 
 ## Deployment

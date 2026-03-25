@@ -1,6 +1,6 @@
 ---
 name: reveal-screenshot-pdf
-description: Export this Reveal.js deck to PDF. Use whenever the user asks to export as PDF, save a PDF, or generate a PDF version of the presentation. Default to writing the PDF to ~/Downloads/open-rtls-geoit.pdf by capturing each slide as a viewport screenshot and stitching those screenshots into a one-page-per-slide PDF.
+description: Export this Reveal.js deck to PDF. Use whenever the user asks to export as PDF, save a PDF, or generate a PDF version of the presentation. Default to writing the PDF to ~/Downloads/open-location-stack-geoit.pdf by capturing each slide as a viewport screenshot and stitching those screenshots into a one-page-per-slide PDF.
 ---
 
 # Reveal Screenshot PDF
@@ -34,7 +34,7 @@ node skills/reveal-screenshot-pdf/scripts/export_reveal_screenshot_pdf.js \
 - One PDF page per screenshot
 - Backgrounds included
 - Transitions disabled during capture
-- Output path: `~/Downloads/open-rtls-geoit.pdf`
+- Output path: `~/Downloads/open-location-stack-geoit.pdf`
 
 ## Notes
 

@@ -2,7 +2,7 @@
 
 <section class="title-layout">
   <div class="title-copy">
-    <h1>Open RTLS for Indoor Mapping</h1>
+    <h1>Open Location Stack for Indoor Mapping</h1>
     <h2>GEOIT 2026</h2>
   </div>
   <div class="title-meta">
@@ -10,7 +10,7 @@
       <h3>Jilles van Gurp</h3>
     </div>
     <div class="title-aside">
-      <img src="assets/open-rtls-logo.svg" alt="Open RTLS logo" class="title-logo" />
+      <img src="assets/open-location-stack-logo.svg" alt="Open Location Stack logo" class="title-logo" />
     </div>
   </div>
   <div class="title-support">
@@ -18,8 +18,8 @@
     <div class="qr-grid">
       <div class="qr-card">
         <div class="qrcode-slot">
-          <img src="assets/open-rtls-qr.svg" alt="QR code for open-rtls.com" />
-          <a href="https://open-rtls.com">open-rtls.com</a>
+          <img src="assets/open-location-stack-qr.svg" alt="QR code for openlocationstack.com" />
+          <a href="https://openlocationstack.com">openlocationstack.com</a>
         </div>
       </div>
       <div class="qr-card">
@@ -169,7 +169,7 @@ Integrating real-time location system (RTLS) hardware means doing the same types
 
 <!-- .slide: class="why-open-slide" -->
 ---
-## Why Open RTLS is needed
+## Why Open Location Stack is needed
 
 <div class="card-grid two-up compact equal-card-grid">
   <div class="info-card">
@@ -192,7 +192,7 @@ Integrating real-time location system (RTLS) hardware means doing the same types
     </ul>
   </div>
   <div class="info-card">
-    <h3>Open RTLS targets the <span class="hl">missing layer</span></h3>
+    <h3>Open Location Stack targets the <span class="hl">missing layer</span></h3>
     <ul>
       <li>Shared map workflows and validation</li>
       <li>Portable interfaces around standards</li>
@@ -286,14 +286,14 @@ IMDF stands for <strong><span class="hl">Indoor Mapping Data Format</span></stro
   </div>
   <div class="info-card">
     <h3>Integration follows</h3>
-    <p>Full integration with the OSS <span class="hl">Open RTLS Hub</span> (OMLOX compatible) and FORMATION.</p>
+    <p>Full integration with the OSS <span class="hl">Open Location Hub</span> (OMLOX compatible) and FORMATION.</p>
   </div>
 </div>
 
-> Goal: Beautiful indoor maps powered by <span class="hl">Open RTLS</span>.
+> Goal: Beautiful indoor maps powered by <span class="hl">Open Location Stack</span>.
 
 ---
-## Planned Open RTLS Components
+## Planned Open Location Stack Components
 
 <div class="card-grid two-up">
   <div class="info-card">
@@ -305,7 +305,7 @@ IMDF stands for <strong><span class="hl">Indoor Mapping Data Format</span></stro
     <p><span class="hl">Easily stylable</span> indoor maps with floor switching, navigation, and product-ready rendering.</p>
   </div>
   <div class="info-card">
-    <h3>Open RTLS Hub</h3>
+    <h3>Open Location Hub</h3>
     <p>Aggregates and federates live position updates, with <span class="hl">OMLOX Hub APIs</span> for applications on top.</p>
   </div>
   <div class="info-card">
@@ -319,7 +319,7 @@ IMDF stands for <strong><span class="hl">Indoor Mapping Data Format</span></stro
 ---
 ## Standards alignment
 
-Open RTLS is mapping-first, but standards-aligned across the stack.
+Open Location Stack is mapping-first, but standards-aligned across the stack.
 
 <div class="card-grid three-up">
   <div class="info-card">
@@ -388,7 +388,7 @@ For this audience, the near-term emphasis is:
 ---
 ## What we need now
 
-Open RTLS is currently in the <span class="hl">requirements gathering phase</span>.
+Open Location Stack is currently in the <span class="hl">requirements gathering phase</span>.
 
 <div class="card-grid two-up">
   <div class="info-card">
@@ -411,7 +411,7 @@ Open RTLS is currently in the <span class="hl">requirements gathering phase</spa
   </div>
 </div>
 
-[open-rtls.com](https://open-rtls.com)
+[openlocationstack.com](https://openlocationstack.com)
 
 [open-rtls@tryformation.com](mailto:open-rtls@tryformation.com)
 
@@ -421,8 +421,8 @@ Open RTLS is currently in the <span class="hl">requirements gathering phase</spa
 <div class="card-grid two-up compact qna-grid">
   <div class="info-card qna-card">
     <div class="qrcode-slot">
-      <img src="assets/open-rtls-qr.svg" alt="QR code for https://open-rtls.com" />
-      <a href="https://open-rtls.com">https://open-rtls.com</a>
+      <img src="assets/open-location-stack-qr.svg" alt="QR code for https://openlocationstack.com" />
+      <a href="https://openlocationstack.com">https://openlocationstack.com</a>
     </div>
   </div>
   <div class="info-card qna-card">

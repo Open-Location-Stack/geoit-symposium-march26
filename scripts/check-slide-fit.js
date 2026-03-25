@@ -57,7 +57,7 @@ async function openBrowser() {
     // Fall back to launching an isolated browser for the check.
   }
 
-  const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'open-rtls-slide-fit-'));
+  const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'open-location-stack-slide-fit-'));
   const browser = await puppeteer.launch({
     executablePath: chromePath,
     headless: true,

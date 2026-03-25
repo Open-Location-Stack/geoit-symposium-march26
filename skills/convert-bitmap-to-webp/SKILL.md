@@ -50,7 +50,7 @@ mv ~/Downloads/logo-wall.webp assets/logo-wall.webp
 After conversion, search for old extensions before removing them:
 
 ```bash
-rg -n '\.(png|jpg|jpeg)' slides.md open-rtls.css index.html assets skills -S
+rg -n '\.(png|jpg|jpeg)' slides.md open-location-stack.css index.html assets skills -S
 ```
 
 Only remove original files once all intended references point to `.webp`.

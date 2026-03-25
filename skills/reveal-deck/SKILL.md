@@ -11,13 +11,13 @@ Use this skill when working on slide content, styling, or static presentation as
 ## Primary files
 
 - `slides.md`
-- `open-rtls.css`
+- `open-location-stack.css`
 - `index.html`
 - `assets/*.svg`
 
 ## Workflow
 
-1. Inspect `slides.md` and `open-rtls.css` before changing structure or tone.
+1. Inspect `slides.md` and `open-location-stack.css` before changing structure or tone.
 2. Prefer editing existing slides rather than adding complex runtime behavior.
 3. If a new concept needs a visual, prefer simple local SVG diagrams over screenshots.
 4. Keep copy concise and presentation-oriented, not website-paragraph oriented.
@@ -38,7 +38,7 @@ bunx serve .
 
 - Light backgrounds only unless the user explicitly wants a darker theme.
 - Keep borders, cards, and typography minimal and editorial.
-- Reuse `assets/open-rtls-logo.svg` for branding.
+- Reuse `assets/open-location-stack-logo.svg` for branding.
 - Avoid adding external asset dependencies when a local SVG will do.
 
 ## Validation
